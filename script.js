@@ -15,7 +15,7 @@ document.querySelectorAll('.timeline-dot').forEach(dot => {
 // Right-side menu: smooth scroll and active state
 document.querySelectorAll('#right-menu .menu-link').forEach(link => {
   link.addEventListener('click', function(e) {
-    // Only handle internal links (anchors)
+    // If it's an internal anchor link
     if (this.getAttribute('href').startsWith('#')) {
       e.preventDefault();
       document.querySelectorAll('#right-menu .menu-link').forEach(l => l.classList.remove('active'));
@@ -27,6 +27,7 @@ document.querySelectorAll('#right-menu .menu-link').forEach(link => {
         target.scrollIntoView({behavior: 'smooth'});
       }
     }
+    // If it's an external page (like certificate.html), let it go
   });
 });
 
