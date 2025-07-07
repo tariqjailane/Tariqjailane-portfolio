@@ -23,7 +23,8 @@ body {
 #datastream-bg {
   position: fixed;
   z-index: 0;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   pointer-events: none;
@@ -56,7 +57,8 @@ nav {
   position: relative;
 }
 
-.timeline-dot.active, .timeline-dot:hover {
+.timeline-dot.active,
+.timeline-dot:hover {
   background: var(--data-green);
   box-shadow: 0 0 18px 4px #38ff8844;
 }
@@ -113,8 +115,8 @@ nav {
 }
 
 @keyframes nodePulse {
-  0% { box-shadow: 0 0 30px #38ff8844;}
-  100% { box-shadow: 0 0 60px #38ff88;}
+  0% { box-shadow: 0 0 30px #38ff8844; }
+  100% { box-shadow: 0 0 60px #38ff88; }
 }
 
 .bio-content {
@@ -145,8 +147,8 @@ nav {
 }
 
 @keyframes textFlicker {
-  0% { filter: brightness(1);}
-  100% { filter: brightness(1.2);}
+  0% { filter: brightness(1); }
+  100% { filter: brightness(1.2); }
 }
 
 section {
@@ -230,8 +232,8 @@ section.visible {
 }
 
 @keyframes blink {
-  0% { opacity: 0.7;}
-  100% { opacity: 1;}
+  0% { opacity: 0.7; }
+  100% { opacity: 1; }
 }
 
 .cert-link {
@@ -284,7 +286,9 @@ section.visible {
 /* Social Icons */
 .social-icons {
   display: flex;
-  gap: 1.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
   margin: 2rem 0 1rem 0;
   z-index: 10;
 }
@@ -300,10 +304,11 @@ section.visible {
   text-align: center;
   text-decoration: none;
   box-shadow: 0 0 8px #38ff88, 0 0 16px #38ff8822;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  transition: all 0.2s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0.2em;
 }
 
 .social-icons .fa:hover {
@@ -379,12 +384,14 @@ section.visible {
   .social-icons {
     justify-content: center !important;
     margin: 1.5rem 0 !important;
+    flex-wrap: wrap !important;
+    gap: 0.8rem !important;
   }
   .social-icons .fa {
-    font-size: 2rem !important;
-    width: 3em !important;
-    height: 3em !important;
-    padding: 0.8em !important;
+    font-size: 1.4rem !important;
+    width: 2.4em !important;
+    height: 2.4em !important;
+    padding: 0.6em !important;
   }
   .footer {
     padding-bottom: 3.5rem !important;
@@ -395,6 +402,17 @@ section.visible {
 }
 
 @media (max-width: 400px) {
-  .bio-content h1 { font-size: 1.1rem !important;}
-  .photo-node img { width: 90px !important; height: 90px !important;}
+  .bio-content h1 {
+    font-size: 1.1rem !important;
+  }
+  .photo-node img {
+    width: 90px !important;
+    height: 90px !important;
+  }
+  .social-icons .fa {
+    font-size: 1.2rem !important;
+    width: 2.2em !important;
+    height: 2.2em !important;
+    padding: 0.5em !important;
+  }
 }
