@@ -334,7 +334,7 @@ section.visible {
     margin-bottom: 1.5rem !important;
   }
   .bio-content {
-    width: 100%;
+    width: 100% !important;
   }
   .bio-content h1 {
     font-size: 2rem !important;
