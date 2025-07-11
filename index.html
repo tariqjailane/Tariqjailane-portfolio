@@ -1,55 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Tarique Al Jailane S | Digital Genesis Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <canvas id="datastream-bg"></canvas>
+  <canvas id="matrix-bg"></canvas>
 
-  <nav>
-    <div class="timeline-dot active" data-target="main-section" title="Home"></div>
-    <div class="timeline-dot" data-target="about-section" title="About"></div>
-    <div class="timeline-dot" data-target="certs-section" title="Certifications"></div>
-  </nav>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showPage('home');return false;">Home</a></li>
+        <li><a href="#" onclick="showPage('about');return false;">About Me</a></li>
+        <li><a href="#" onclick="showPage('certificates');return false;">Certificates</a></li>
+        <li><a href="#" onclick="showPage('projects');return false;">Projects</a></li>
+      </ul>
+    </nav>
 
-  <div id="right-menu">
-    <a href="#main-section" class="menu-link active">Home</a>
-    <a href="#about-section" class="menu-link">About</a>
-    <a href="certificate.html" class="menu-link">Certifications</a>
+    <section id="home" class="page">
+      <img src="PIC.jpg" alt="Your Photo" class="profile-img">
+      <h1>Tarique Al Jailane S.</h1>
+      <p class="bio">
+        Driven by curiosity and a passion for technology, I merge analytical precision with creative thinking to build purposeful digital solutions. My journey spans coding, portfolio development, and database management, empowering me to craft web projects that are not only functional but thoughtfully designed.
+I thrive in structured problem-solving, enjoy unraveling logic puzzles, and love experimenting with new tools—from mastering Excel Pivot Tables to designing themed portfolio pages. Whether it’s optimizing code or elevating a user interface, I approach challenges with clarity, adaptability, and a lifelong commitment to learning.
+
+      </p>
+               <div class="social-links">
+        <a href="https://www.linkedin.com/in/tariq-jailane-0069b02a2/" class="fa-brands fa-linkedin-in" target="_blank" title="LinkedIn"></a>
+        <a href="https://github.com/tariqjailane" class="fa-brands fa-github" target="_blank" title="GitHub"></a>
+        <a href="https://instagram.com/tariqjailane" class="fa-brands fa-instagram" target="_blank" title="Instagram"></a>
+        <a href="https://x.com/tariqjailane" class="fa-brands fa-x-twitter" target="_blank" title="X"></a>
+        <a href="mailto:tariqshahul7@gmail.com" class="fa-solid fa-envelope" target="_blank" title="Gmail"></a>
+      </div>
+    </section>
+
+    <section id="about" class="page" style="display:none;">
+      <h2>About Me</h2>
+      <p>
+       <h3>Name:</h3> S.Tarique AL Jailane
+       <h3>Current Location:</h3> KBA Mens Hostel, BSAIST, Vandalur-600048, Tamil Nadu, India.
+<h3>Native Place:</h3> Pudukkottai, Tamil Nadu, India.
+<h3>Career Objective:</h3>
+To leverage my analytical mindset, technical skills, and creative problem-solving abilities to develop efficient software solutions and contribute to impactful digital projects. Passionate about continuous learning and innovation in the field of web development and data analysis.
+<h3>Technical Skills:</h3>
+<li> Programming Languages: C, C++, Python, JavaScript, PHP</li>
+<li> Web Technologies: HTML5, CSS3, Bootstrap</li>
+<li> Database Management: RDBMS, PostgreSQL</li>
+<li> Tools: Excel (including Pivot Tables), VS Code</li>
+<li> Problem Solving: Mathematical reasoning, logical puzzles, structured debugging</li>
+<li> Portfolio Development: Creative design themes, dynamic functionalities, clear navigation</li>
+<h3>Certifications:</h3>
+<li> Python Programming Training</li>
+<li> C and C++ Programming Training</li>
+<li> Full Stack Crash Course: CSS, Bootstrap, JavaScript & PHP (Udemy)</li>
+<li> RDBMS PostgreSQL Training</li>
+<h3>Strengths:</h3>
+<li> Methodical and detail-oriented approach</li>
+<li> Strong logical and analytical reasoning</li>
+<li> Creative thinker with a flair for code aesthetics</li>
+<li> Quick learner with a passion for technology</li>
+<h3> Interests:</h3>
+<li> Coding and building portfolio projects</li>
+<li> Exploring data-driven insights using Excel and SQL</li>
+<li> Solving math challenges and logic puzzles</li>
+<li> Staying updated with new tech trends</li>
+
+      </p>
+            <div class="social-links">
+        <a href="https://www.linkedin.com/in/tariq-jailane-0069b02a2/" class="fa-brands fa-linkedin-in" target="_blank" title="LinkedIn"></a>
+        <a href="https://github.com/tariqjailane" class="fa-brands fa-github" target="_blank" title="GitHub"></a>
+        <a href="https://instagram.com/tariqjailane" class="fa-brands fa-instagram" target="_blank" title="Instagram"></a>
+        <a href="https://x.com/tariqjailane" class="fa-brands fa-x-twitter" target="_blank" title="X"></a>
+        <a href="mailto:tariqshahul7@gmail.com" class="fa-solid fa-envelope" target="_blank" title="Gmail"></a>
+      </div>
+    </section>
+
+    <section id="certificates" class="page" style="display:none;">
+      <h2>Certificate Of Completion in Css Bootstrap Java scroipt And PHP Full stack Crash Course</h2>
+      <img src="php.jpg" alt="Certificate" class="certificate-img">
+      <p><h3>🏆 Certificate of Completion</h3>
+<h4> completed the CSS, Bootstrap, JavaScript, and PHP Full Stack Crash Course on Udemy. This intensive training covered the foundations and advanced techniques required for modern full-stack web development.
+</h4> <h4>📌 Course Highlights</h4>
+<li> Mastery of CSS3 for responsive and visually engaging interfaces</li>
+<li> use of Bootstrap to streamline layout design with mobile-first principles</li>
+<li> Development of dynamic interactions and functionality with JavaScript</li>
+<li> programming with PHP, including handling form data and working with databases</li>
+<li> Integration of front-end and back-end technologies into cohesive, fully functional web applications</li>
+💼 Through hands-on projects and real-world examples, the course empowered me to build robust, interactive websites using industry-standard tools and frameworks.
+</p>
+            <h2>Certificate for the completion of Python Training</h2>
+      <img src="python.jpg" alt="Certificate" class="certificate-img">
+      <p><h3>🏆 Certificate of Completion</h3>
+<h4>Successfully completed Python Training, building a strong foundation in one of the most versatile and in-demand programming languages for modern software development.</h4>
+<h4>📌 Course Highlights</h4>
+<li> Mastered Python syntax, control structures, functions, and error handling</li>
+<li> Gained proficiency in data structures including lists, tuples, dictionaries, and sets</li>
+<li> Explored object-oriented programming (OOP) with classes, inheritance, and encapsulation</li>
+<li> Worked with file operations, modules, and external libraries to enhance functionality</li>
+<li> Python to real-world scenarios, including automation, data processing, and mini-projects</li>
+💼 This training developed my confidence in writing clean, efficient Python code while deepening my understanding of core programming principles. It set the stage for future exploration in areas like data science, web development, and software engineering.
+</p>
+            <h2>Certificate for the completion of RDBMS PostgeSQL Training</h2>
+      <img src="rdbms.jpg" alt="Certificate" class="certificate-img">
+      <p><h3>🏆 Certificate of Completion</h3>
+<h4>completed the RDBMS PostgreSQL Training, gaining in-depth knowledge and hands-on experience with relational database management systems using PostgreSQL.</h4>
+<h4>📌 Course Highlights</h4>
+<li> Comprehensive understanding of Relational Database Concepts, normalization, and data modeling</li>
+<li> Practical skills in PostgreSQL, including schema design, query optimization, and data manipulation</li>
+<li>  Expertise in SQL syntax, joins, aggregate functions, subqueries, and indexing strategies</li>
+<li> Implementation of stored procedures, triggers, and views for enhanced database functionality</li>
+<li> Exposure to real-world database scenarios, focusing on reliability, scalability, and performance</li>
+💼 This training equipped me to design and manage robust, efficient, and scalable databases using PostgreSQL—one of the leading open-source database systems.
+</p>
+            <h2>Certificate for the completion of C++ Training</h2>
+      <img src="cpp.jpg" alt="Certificate" class="certificate-img">
+      <p><h3>🏆 Certificate of Completion</h3>
+<h4> completed C++ Training, acquiring a solid foundation in one of the most powerful and widely used programming languages in systems and application development.</h4>
+<h4>📌 Course Highlights</h4>
+<li> Mastered core syntax, control flow, and modular code structures in C++</li>
+<li> Developed proficiency in object-oriented programming, including classes, inheritance, and polymorphism</li>
+<li> Explored advanced features such as pointers, memory management, and file operations</li>
+<li> Built programs using STL (Standard Template Library) for efficient data manipulation</li>
+<li> Applied knowledge in problem-solving exercises and mini-projects, reinforcing understanding of C++ principles</li>
+💼 This training sharpened my ability to write efficient, maintainable code using C++ and prepared me for tackling real-world applications in software engineering, game development, and system-level programming.
+</p>
+            <h2>Certificate for the completion of C Training</h2>
+      <img src="c.jpg" alt="Certificate" class="certificate-img">
+      <p><h3>🏆 Certificate of Completion</h3>
+<h4>Successfully completed C Programming Training, acquiring foundational and practical skills in one of the most influential and performance-oriented programming languages used in system-level and embedded software development.</h4>
+<h4>📌 Course Highlights</h4>
+<li> Deep understanding of C syntax, data types, operators, and control structures</li> 
+<li>Proficiency in functions, recursion, and modular programming techniques</li>
+<li> Hands-on experience with pointers, memory allocation, and dynamic data structures</li>
+<li> Developed programs involving file handling, command-line arguments, and error management</li>
+<li> Explored key concepts in compilation, debugging, and algorithmic problem-solving</li>
+💼 This training strengthened my ability to write efficient, structured C code and laid the groundwork for more advanced programming in systems, embedded applications, and high-performance computing.
+
+           <div class="social-links">
+        <a href="https://www.linkedin.com/in/tariq-jailane-0069b02a2/" class="fa-brands fa-linkedin-in" target="_blank" title="LinkedIn"></a>
+        <a href="https://github.com/tariqjailane" class="fa-brands fa-github" target="_blank" title="GitHub"></a>
+        <a href="https://instagram.com/tariqjailane" class="fa-brands fa-instagram" target="_blank" title="Instagram"></a>
+        <a href="https://x.com/tariqjailane" class="fa-brands fa-x-twitter" target="_blank" title="X"></a>
+        <a href="mailto:tariqshahul7@gmail.com" class="fa-solid fa-envelope" target="_blank" title="Gmail"></a>
+      </div></p>
+    </section>
+
+    <section id="projects" class="page" style="display:none;">
+      <h2>My Projects</h2>
+      <ul>
+        <li>
+          <strong>Calculator:</strong>
+          <a href="https://calculator-rupee.netlify.app" target="_blank">calculator-rupee.netlify.app</a>
+        </li>
+        <li>
+          <strong>Interest Calculator:</strong>
+          <a href="https://interest-calculator-tj.vercel.app" target="_blank">interest-calculator-tj.vercel.app</a>
+        </li>
+      </ul>
+                 <div class="social-links">
+        <a href="https://www.linkedin.com/in/tariq-jailane-0069b02a2/" class="fa-brands fa-linkedin-in" target="_blank" title="LinkedIn"></a>
+        <a href="https://github.com/tariqjailane" class="fa-brands fa-github" target="_blank" title="GitHub"></a>
+        <a href="https://instagram.com/tariqjailane" class="fa-brands fa-instagram" target="_blank" title="Instagram"></a>
+        <a href="https://x.com/tariqjailane" class="fa-brands fa-x-twitter" target="_blank" title="X"></a>
+        <a href="mailto:tariqshahul7@gmail.com" class="fa-solid fa-envelope" target="_blank" title="Gmail"></a>
+      </div>
+    </section>
   </div>
 
-  <section class="main-section visible" id="main-section">
-    <div class="photo-node">
-      <img src="pic.jpg" alt="Your Photo" />
+  <footer>
+    <div class="footer-content">
+      © 2025 Tarique Al Jailane S. All rights reserved.
     </div>
-    <div class="bio-content">
-      <h1>Tarique Al Jailane S</h1>
-      <p>
-       Driven by curiosity and a passion for technology, I blend creativity with technical expertise to build immersive digital experiences. My journey spans front-end development, UI/UX design, and data science, allowing me to craft solutions that are both visually striking and robustly secure. I thrive in fast-paced environments, love experimenting with new frameworks, and believe in lifelong learning.
-      </p>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/tariq-jailane-0069b02a2/" class="fa fa-linkedin" target="_blank"></a>
-        <a href="https://github.com/tariqjailane" class="fa fa-github" target="_blank"></a>
-        <a href="https://twitter.com/tariqjailane" class="fa fa-twitter" target="_blank"></a>
-        <a href="https://instagram.com/tariqjailane" class="fa fa-instagram" target="_blank"></a>
-        <a href="mailto:tariqshahul7@gmail.com" class="fa fa-envelope"></a>
-      </div>
-    </div>
-  </section>
+  </footer>
 
-  <section id="about-section">
-    <h2>About Me</h2>
-    <p>
-    I am a passionate technologist with a keen interest in blending creativity and cybersecurity to build innovative, secure, and visually captivating digital experiences. With a strong foundation in front-end development and a deep curiosity about ethical hacking, I strive to create websites and applications that not only look stunning but also prioritize user safety. My approach is rooted in continuous learning and experimentation, always exploring the latest technologies and frameworks to stay ahead in this fast-evolving digital landscape. Beyond coding, I enjoy crafting smooth animations and immersive interfaces that engage users seamlessly. When I’m not coding or exploring cyber security concepts, I’m inspired by synthwave music and digital art, which influence my design aesthetics and drive my creative process. Let’s connect and build something extraordinary together.
-    </p>
-  </section>
-
-  <footer class="footer">© 2025 Tarique Al Jailane . All rights reserved.</footer>
   <script src="script.js"></script>
 </body>
 </html>
